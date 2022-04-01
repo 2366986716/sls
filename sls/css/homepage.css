@@ -1,0 +1,279 @@
+/* 视差 */
+body {
+    background: url(../images/bg3.jpg) no-repeat;
+    background-attachment: fixed;
+    /* background-position-y: 200px; */
+
+
+}
+
+.attachment1 {
+    background: url(../images/bg1.jpg) no-repeat;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* .attachment2 {
+    scroll-behavior: smooth;
+} */
+
+.attachment {
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* 视差结束 */
+
+/* 导航栏开始 */
+header .nav {
+    width: 100%;
+    height: 60px;
+    top: -60px;
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    display: flex;
+    line-height: 60px;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+}
+
+/* 导航栏左 */
+header .nav .nav_left {
+    margin-left: 30px;
+}
+
+header .nav .nav_left b a {
+    color: white;
+
+}
+
+/* 导航栏右 */
+header .nav .nav_right ul li {
+    float: left;
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    cursor: pointer;
+    position: relative;
+}
+
+header .nav .nav_right ul li i {
+    color: white;
+    /* padding-right: 4px;
+    padding-left: 2px; */
+}
+
+header .nav .nav_right ul li:nth-child(7) {
+    padding-right: 35px;
+}
+
+header .nav .nav_right ul li p {
+    font-size: 14px;
+    color: white;
+    /* float: left; */
+    padding: 0px 4px 0px 2px;
+
+}
+
+/* 导航栏小蓝条效果 */
+header .nav .nav_right ul li .span {
+    display: block;
+    /* width: 50px; */
+    width: 0px;
+    height: 3px;
+    background-color: #80c8f8;
+    position: absolute;
+    bottom: 14px;
+    border-radius: 3px;
+    left: 7px;
+    transition: all 0.3s ease;
+}
+
+header .nav .nav_right ul li:hover .span {
+    width: 50px;
+}
+
+header .nav .nav_right ul li .whspan {
+    display: block;
+    /* width: 50px; */
+    width: 0px;
+    height: 3px;
+    background-color: #80c8f8;
+    position: absolute;
+    bottom: 14px;
+    border-radius: 3px;
+    left: 7px;
+    transition: all 0.3s ease;
+}
+
+header .nav .nav_right ul li:hover .whspan {
+    width: 60px;
+}
+
+/* 导航栏结束 */
+
+
+/* 主体logo开始 */
+.logoP {
+    color: #eeeeee;
+    font-size: 2em;
+    margin-top: 350px;
+
+}
+
+.description {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -115px;
+}
+
+#subtitle {
+    color: #eeeeee;
+    /* font-size: 1.7em; */
+}
+
+/* 主体logo结束 */
+
+
+/* 向下箭头开始 */
+#arrows {
+    padding-top: 500px;
+    font-size: 25px;
+}
+
+/* 向下箭头结束 */
+
+/* 定位元素遮罩层开始 */
+header .box1 {
+    position: absolute;
+    width: 956px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    z-index: 9999;
+    top: 0;
+}
+
+header .box2 {
+    position: absolute;
+    width: 956px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    top: 0;
+    left: 956px;
+}
+
+/* 定位元素遮罩层结束 */
+
+/* 导航栏定位元素开始 */
+/* 清单 */
+header .inventory {
+    height: 120px;
+    width: 80px;
+    position: absolute;
+    background-color: #eeeeee;
+    top: 50px;
+    right: 0;
+    display: none;
+}
+
+header .inventory .inventory_box {
+    width: 100%;
+    height: 40px;
+    /* border: 1px solid;
+    box-sizing: border-box; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .inventory .inventory_box:hover {
+    background-color: #80c8f8;
+}
+
+header .inventory .inventory_box b {
+    /* padding: 0px 5px 0px 10px; */
+    padding-right: 7px;
+    color: #4c4948;
+}
+
+header .inventory .inventory_box a {
+    font-size: 14px;
+    color: #4c4948;
+
+}
+
+/* 学习 */
+header .study {
+    height: 360px;
+    width: 145px;
+    position: absolute;
+    background-color: #eeeeee;
+    top: 50px;
+    right: 0;
+    display: none;
+}
+
+header .study .study_box {
+    /* display: block; */
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+}
+
+header .study .study_box:hover {
+    background-color: #80c8f8;
+}
+
+header .study .study_box b {
+    padding: 0px 5px 0px 10px;
+    color: #4c4948;
+}
+
+header .study .study_box a {
+    font-size: 14px;
+    color: #4c4948;
+
+}
+
+/* 娱乐 */
+header .game {
+    height: 160px;
+    width: 100px;
+    position: absolute;
+    background-color: #eeeeee;
+    top: 50px;
+    right: 0;
+    display: none;
+}
+
+header .game .game_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+
+header .game .game_box b {
+    padding: 0px 5px 0px 10px;
+    color: #4c4948;
+
+}
+
+header .game .game_box a {
+    color: #4c4948;
+    font-size: 14px;
+}
+
+header .game .game_box:hover {
+    background-color: #80c8f8;
+}
+
+
+/* 导航栏定位元素结束 */

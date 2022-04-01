@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOWARD EVENING</title>
+</head>
+<!-- 引入浏览器logo -->
+<link rel="shortcut icon" href="images/logo.ico">
+<!-- 引入主页css -->
+<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" href="css/homepageTow.css">
+<!-- 初始化css -->
+<link rel="stylesheet" href="css/int.css">
+<!-- 引入时钟css -->
+<link rel="stylesheet" href="css/home_clock.css">
+<!-- 引入字体库 -->
+<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+
+<body>
+    <header>
+        <!-- 视差一 -->
+        <div class="attachment attachment1">
+            <nav>
+                <!-- 导航栏开始 -->
+                <div class="nav">
+                    <div class="nav_left"><b><a href="">TOWARD EVENING</a></b></div>
+                    <div class="nav_right">
+                        <ul>
+                            <li>
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <p>搜索</p>
+                                <span class="span"></span>
+                            </li>
+                            <li>
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                                <p>主页</p>
+                                <span class="span"></span>
+
+                            </li>
+                            <li>
+                                <i class="fa fa-tags" aria-hidden="true"></i>
+                                <p>标签</p>
+                                <span class="span"></span>
+
+                            </li>
+
+                            <li>
+                                <i class="fa fa-heartbeat" aria-hidden="true"></i>
+                                <p>清单</p>
+                                <i id="i" class="fa fa-angle-down " aria-hidden="true"></i>
+                                <span class="whspan"></span>
+                                <!-- 清单 -->
+                                <div class="inventory">
+                                    <div class="inventory_box">
+                                        <b class="fa fa-music" aria-hidden="true"></b>
+                                        <a>音乐</a>
+                                    </div>
+                                    <div class="inventory_box">
+                                        <b class="fa fa-picture-o" aria-hidden="true"></b>
+                                        <a>照片</a>
+                                    </div>
+                                    <div class="inventory_box">
+                                        <b class="fa fa-video-camera" aria-hidden="true"></b>
+                                        <a>视频</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-list-ul " aria-hidden="true"></i>
+                                <p>学习</p>
+                                <i id="i" class="fa fa-angle-down " aria-hidden="true"></i>
+                                <span class="whspan"></span>
+                                <!-- 学习 -->
+                                <div class="study">
+                                    <div class="study_box">
+                                        <b class="fa fa-file-word-o" aria-hidden="true"></b>
+                                        <a href="https://www.100font.com/" target="_blank">100font</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-book" aria-hidden="true"></b>
+                                        <a href="http://www.diyiziti.com/list" target="_blank">第一字体</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-building" aria-hidden="true"></b>
+                                        <a href="https://js.design/recommend" target="_blank">即时设计工作台</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-cube" aria-hidden="true"></b>
+                                        <a https='//sm.ms/login' target="_blank">网站图片生成器</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-gamepad" aria-hidden="true"></b>
+                                        <a href="https://www.processon.com/" target="_blank">processon</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-book" aria-hidden="true"></b>
+                                        <a href="https://www.iconfont.cn/" target="_blank">阿里图标库</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-laptop" aria-hidden="true"></b>
+                                        <a href="https://www.csdn.net/" target="_blank">CSDN官网</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-film" aria-hidden="true"></b>
+                                        <a href="https://tool.oschina.net/commons?type=3" target="_blank">颜色对照表</a>
+                                    </div>
+                                    <div class="study_box">
+                                        <b class="fa fa-linode" aria-hidden="true"></b>
+                                        <a href="http://www.fontawesome.com.cn/faicons/" target="_blank">Font
+                                            Awesome</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-gamepad " aria-hidden="true"></i>
+                                <p>娱乐</p>
+                                <i id="i" class="fa fa-angle-down " aria-hidden="true"></i>
+                                <span class="whspan"></span>
+                                <!-- 娱乐 -->
+                                <div class="game">
+                                    <div class="game_box">
+                                        <b class="fa fa fa-film" aria-hidden="true"></b>
+                                        <a href="http://www.ikan.ml/index.html" target="_blank">lkan 影视</a>
+                                    </div>
+                                    <div class="game_box">
+                                        <b class="fa fa fa-film" aria-hidden="true"></b>
+                                        <a href="http://www.u5kk.com/pc/#/main/1/" target="_blank">U5 影视</a>
+                                    </div>
+                                    <div class="game_box">
+                                        <b class="fa fa fa-film" aria-hidden="true"></b>
+                                        <a href="https://www.471pk.com/" target="_blank">片库网</a>
+                                    </div>
+                                    <div class="game_box">
+                                        <b class="fa fa fa-film" aria-hidden="true"></b>
+                                        <a href="https://www.hobiao.net/" target="_blank">红标影院</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa fa-heart  " aria-hidden="true"></i>
+                                <p>关于</p>
+                                <span class="span"></span>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 导航栏结束 -->
+            </nav>
+            <!-- 主题logo -->
+            <div class="logoP"><b>ShI's Memo</b></div>
+            <!-- 打字特效 -->
+            <div class="description center-align" style="color: #eeeeee;font-size: 1.6em;">
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['你喜欢黄昏还是朝阳'],
+                        startDelay: 300,
+                        typeSpeed: 150,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    }); 
+                </script>
+            </div>
+            <!-- 向下箭头 -->
+            <a href="#div" scroll-behavior="smooth" style="color: #eeeeee;" id="arrows" class="fa fa-chevron-down"
+                aria-hidden="true"></a>
+            <!-- 遮罩层定位元素 -->
+            <div class="box1"></div>
+            <div class="box2"></div>
+
+
+
+
+
+        </div>
+    </header>
+    <!-- 视差二 -->
+    <main>
+        <div id="div" class="attachment attachment2" scroll-behavior="smooth">
+
+            <div class="bigContainer">
+                <div class="left">
+                    <!-- 1 -->
+                    <div class="box">
+                        <div class="left_box">
+                            <img src="images/monkey.jpg" alt="">
+                        </div>
+                        <div class="right_box">
+                            <p>油猴脚本</p>
+                            <span>油猴Tampermonkey，中文名是油猴脚本管理，可以通过它添加脚本，然后实现各种不同的任务目标可以通过脚本实现浏览器插件的功能如：下载视频和图片、解析资源、屏蔽搜索广告、跳过广告片头、抢购等等各类脚本
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="box">
+                        <div class="right_box">
+                            <p>windows软件推荐</p>
+                            <span>windows上的软件众多让人眼花缭乱以下是我整理出的几个软件足以让你的windows体验更加丝滑！
+                                安全工具火绒：https://www.huorong.cn/
+                                浏览器Edge：https://www.microsoft.com/zh-cn/edge谷歌：https://www.google.cn/intl/zh-CN/chrome/火狐：http://www.firefox.com.cn/
+                                聊天办公：Tim: https://office.qq.com/微信：https://weixin.qq.com/
+                                平面工具：Ps：Pr： ——– 大力盘Ae：Sai：https://sai.yufan.me/
+                                win10美化：RocketDock: https://punklabs.com/TransslucentTB:微软商店中下载
+                                编程：Visual：https://visualstudio.microsoft.com/zh-hans/微信web:</span>
+                        </div>
+                        <div class="left_box">
+                            <img src="images/win.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="box">
+                        <div class="left_box">
+                            <img src="images/vue.png" alt="">
+                        </div>
+                        <div class="right_box">
+                            <p>Vue.js</p>
+                            <span>Vue.js寒假在家决定开个新坑Vue.js一个渐进式框架在官网看了看文档再去学习网站（b站）找教学视频
+                                Vue.js 最简单的方法是使用 Hello World 例子。在浏览器新标签页中打开它，跟着例子学习一些基础用法。或者也可以创建一个 .html
+                                文件，然后通过下方式引入Vue
+                                12
+                                <!-- 开发环境版本，包含了有帮助的命令行警告 -->
+                                <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+                                持续更新……..
+                            </span>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+                    <div class="box">
+                        <div class="right_box">
+                            <p>5G新名词</p>
+                            <span>NRNew
+                                Radio翻译过来是新空口、新无线的意思，就是5G的无线网。一般移动通信技术主要可以分成无线网和核心网两个部分，5G的无线网技术变化很大，事实上正是因为无线网的新技术的引进才使得5G能实现远超4G的高速率，所以5G的无线网被叫做NR，全新的无线（空口）
+                                2mmWave(毫米波)毫米波是一种频率为30到300 GHz的电磁波，频段位于微波(microwave)和红外波(infrared
+                                wave)之间。应用到5G技术的毫米波为24到100
+                                GHz的频段。毫米波的极高频率让它有着极快的传输速率。同时它的较高带宽也让运营商的频段选择更广。要知道现在闲置的频段越来越少。但毫米波也不完美，其超短波长(1到10
+                                mm)让它穿透物体的能力很弱，这导致了信号衰减。这些物体包括空气、雾、云层和厚实的物体等。
+                                LDPCLDPC全称Low Density Parity Check Code，中文译为“低密度奇偶校验码”，由美国工程师Robert G.
+                                Gallager发明。它是一种“线性误差校正码”。它能高效、精细、可靠地检测出设备之间传送的数据是否正确，是否缺失。这种能力让LDPC逐渐被应用在 ...</span>
+                        </div>
+                        <div class="left_box">
+                            <img src="images/5g.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="box">
+                        <div class="left_box">
+                            <img src="images/edge.png" alt="">
+                        </div>
+                        <div class="right_box">
+                            <p>edge浏览器插件</p>
+                            <span>Edge浏览器是一款微软发布的浏览器，可以兼容Chrome与Firefox两大浏览器的扩展程序以下是我平时使用中常用的一些插件
+                                关于Tampermonkey(油猴)这是是一款免费的浏览器扩展和最为流行的用户脚本管理器各类脚本可以在Greasy
+                                Fork中下载：https://greasyfork.org/zh-CN</span>
+                        </div>
+                    </div>
+                    <!-- 6 -->
+                    <div class="box">
+                        <div class="right_box">
+                            <p>Butterfly主题背景魔改</p>
+                            <span>Butterfly主题背景魔改Butterfly主题页面分为了顶部与背景两个图层所以我们先要将顶部图片透明化
+                                顶部图片透明在 hexoblog\themes\butterfly\layout\includes\header\index.pug 中插入
+                                12if !is_post() - var bg_img = 'background-color:transparent;'
+
+                                页脚透明在 hexoblog\themes\butterfly\layout\includes\layout.pug 中插入
+                                1234567if !is_post() if (footerBg === true) - var footer_bg = 'background-color:
+                                transparent;' else - var footer_bg = 'background-color: transparent;'else - var
+                                footer_bg = 'background-color: transparen ...</span>
+                        </div>
+                        <div class="left_box">
+                            <img src="images/botterfly2.png" alt="">
+                        </div>
+                    </div>
+                    <!-- 7 -->
+                    <div class="box">
+                        <div class="left_box">
+                            <img src="images/botterfy.png" alt="">
+                        </div>
+                        <div class="right_box">
+                            <p>Butterfly主题外部文件引入</p>
+                            <span>Butterfly主题配置魔改引入js/css引入文件的方式有两种：以相对路径的方式引入和以外链引入两种以相对路径引入将写好的 css js 文件分别移动到
+                                \Butterfly\source\ js和css目录下然后修改主题配置文件的引入方式
+                                12345678910inject: head: #-
+                                ript src="https://cdn.jsdelivr.net/gh/你的仓库名称/@版本号& ...</span>
+                        </div>
+                    </div>
+                    <!-- 8 -->
+                    <div class=" box">
+                        <div class="right_box">
+                            <p>各类网站推荐</p>
+                            <span>推荐一些工具资源网站资源类这是一个学习剪辑软件的网站doyoudo：https://www.doyoudo.com/中国大学MOOC
+                                这个看名字应该都知道是干嘛的了吧，有感兴趣的课程可以在这里面报名学习哦：https://www.icourse163.org/树莓派官网：https://www.raspberrypi.org/搜图导航
+                                优质的图片素材网站的集合：https://www.91sotu.com/wallhaven 壁纸网站：https://wallhaven.cc/
+                                工具类MSDN 我告诉你
+                                可以下载各类纯洁软件工具，系统：https://msdn.itellyou.cn/在线ps软件：https://www.uupoop.com/AIPIX 在线扣图:
+                                https://aipix.net/?lang=zhPPT模板：http://www.1ppt.com/大力盘搜索
+                                百度网盘搜索：https://www.dalipan.com/在线工具箱: https://tool.lu/
+                                持续更新!</span>
+                        </div>
+                        <div class="left_box">
+                            <img src="images/archlinue.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 右边侧边栏 -->
+                <div class="right">
+                    <div class="box1">
+                        <div class="name">
+                            <div class="portrait"><img src="images/name.jpg" alt=""></div>
+                        </div>
+                        <div class="label">
+                            <a href="">
+                                <div>文章</div>
+                                <div>8</div>
+                            </a>
+                            <a href="">
+                                <div>标签</div>
+                                <div>8</div>
+                            </a>
+                            <a href="">
+                                <div>访问</div>
+                                <div>8</div>
+                            </a>
+                        </div>
+                        <div class="follow">Follow Me</div>
+                    </div>
+                    <div class="box2">
+                        <p><b class="fa fa-bullhorn" aria-hidden="true"></b> 公告</p>
+                        <span>欢饮来到SHI的博客！</span>
+                    </div>
+                    <div class="box3">
+                        <div class="newArticles">
+                            <b class="fa fa-history"></b>
+                            <span>最新文章</span>
+                        </div>
+                        <div class="articleContent">
+                            <img src="images/monkey2.jpg" alt="">
+                            <p>油猴脚本</p>
+                            <p>2022-04-01</p>
+                        </div>
+                        <div class="articleContent">
+                            <img src="images/vue.png" alt="">
+                            <p>Vue学习笔记</p>
+                            <p>2022-04-01</p>
+                        </div>
+                        <div class="articleContent">
+                            <img src="images/win.png" alt="">
+                            <p>windows软件推荐</p>
+                            <p>2022-04-01</p>
+                        </div>
+                        <div class="articleContent">
+                            <img src="images/5g.jpg" alt="">
+                            <p>5G新名词</p>
+                            <p>2022-04-01</p>
+                        </div>
+                        <div class="articleContent">
+                            <img src="images/edge.png" alt="">
+                            <p>edge浏览器插件</p>
+                            <p>2022-04-01</p>
+                        </div>
+                    </div>
+                    <!-- 时钟 -->
+                    <div id="clock">
+                        <div>
+                            <p class="date">{{ date }}</p>
+                            <p class="time">{{ time }}</p>
+                            <p class="name">TOWARD EVENING</p>
+                        </div>
+                    </div>
+                    <div class="box5">
+                        <div><b class="fa fa-tags"></b><span>标签</span></div>
+                        <div><span>UI设计</span><span>web前端</span></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="buttom">
+                <p>©2022 - 2023 TOWARD EVENING</p>
+                <p>框架 Vue|主题 Butterfly</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <!-- < !--鼠标点击特效 -->
+    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
+
+
+
+</body>
+<script src="./js/clickResult.js"></script>
+<script src="./js/nav.js"></script>
+<script src="./vue.js/clock.js"></script>
+<!-- 引入vue -->
+<script src="./vue.js/vue.js"></script>
+
+</html>
